@@ -34,7 +34,7 @@ namespace AoC_Collection
         {
             var rq = (HttpWebRequest)WebRequest.Create($"https://adventofcode.com/{year}/day/{day}/input");
             rq.CookieContainer = new CookieContainer();
-            rq.CookieContainer.Add(new Cookie("session", "53616c7465645f5f691a0bcf70314a0e3a44820f96c6ec5e37940716d2f214026f61515d276d20aeac9f3781987cb74b5bae36fa0f1f2e19af25ecf48440b4c6", "/", "adventofcode.com"));
+            rq.CookieContainer.Add(new Cookie("session", Settings["sessionID"].ToString(), "/", "adventofcode.com"));
             
             var response = (HttpWebResponse)rq.GetResponse();
             var encoding = Encoding.ASCII;

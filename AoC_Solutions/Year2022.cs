@@ -154,31 +154,31 @@ public class Year2022
             new(),
             new(),
         };
-        var l = new List<char> {'B', 'L', 'D', 'T', 'W', 'C', 'F', 'M'};
+        var l = new List<char> {'D', 'M', 'S', 'Z', 'R', 'F', 'W', 'N'};
         l.ForEach(x => stacks[0].Push(x));
 
-        l = new List<char> {'M', 'B', 'L'};
+        l = new List<char> {'W', 'P', 'Q', 'G', 'S'};
         l.ForEach(x => stacks[1].Push(x));
 
-        l = new List<char> {'J', 'C', 'H', 'T', 'L', 'V'};
+        l = new List<char> {'W', 'R', 'V', 'Q', 'F', 'N', 'J', 'C'};
         l.ForEach(x => stacks[2].Push(x));
 
-        l = new List<char> {'S', 'P', 'J', 'W'};
+        l = new List<char> {'F', 'Z', 'P', 'C', 'G', 'D', 'L'};
         l.ForEach(x => stacks[3].Push(x));
 
-        l = new List<char> {'Z', 'S', 'C', 'F', 'T', 'L', 'R'};
+        l = new List<char> {'T', 'P', 'S'};
         l.ForEach(x => stacks[4].Push(x));
 
-        l = new List<char> {'W', 'D', 'G', 'B', 'H', 'N', 'Z'};
+        l = new List<char> {'H', 'D', 'F', 'W', 'R', 'L'};
         l.ForEach(x => stacks[5].Push(x));
 
-        l = new List<char> {'F', 'M', 'S', 'P', 'V', 'G', 'C', 'N'};
+        l = new List<char> {'Z', 'N', 'D', 'C'};
         l.ForEach(x => stacks[6].Push(x));
 
-        l = new List<char> {'W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z'};
+        l = new List<char> {'W', 'N', 'R', 'F', 'V', 'S', 'J', 'Q'};
         l.ForEach(x => stacks[7].Push(x));
 
-        l = new List<char> {'R', 'P', 'M', 'L', 'H'};
+        l = new List<char> {'R', 'M', 'S', 'G', 'Z', 'W', 'V'};
         l.ForEach(x => stacks[8].Push(x));
 
         foreach (var s in from line in input where line.StartsWith("move") select line.Split(" "))
@@ -212,31 +212,31 @@ public class Year2022
             new(),
             new(),
         };
-        var l = new List<char> {'B', 'L', 'D', 'T', 'W', 'C', 'F', 'M'};
+        var l = new List<char> {'D', 'M', 'S', 'Z', 'R', 'F', 'W', 'N'};
         l.ForEach(x => stacks[0].Push(x));
 
-        l = new List<char> {'M', 'B', 'L'};
+        l = new List<char> {'W', 'P', 'Q', 'G', 'S'};
         l.ForEach(x => stacks[1].Push(x));
 
-        l = new List<char> {'J', 'C', 'H', 'T', 'L', 'V'};
+        l = new List<char> {'W', 'R', 'V', 'Q', 'F', 'N', 'J', 'C'};
         l.ForEach(x => stacks[2].Push(x));
 
-        l = new List<char> {'S', 'P', 'J', 'W'};
+        l = new List<char> {'F', 'Z', 'P', 'C', 'G', 'D', 'L'};
         l.ForEach(x => stacks[3].Push(x));
 
-        l = new List<char> {'Z', 'S', 'C', 'F', 'T', 'L', 'R'};
+        l = new List<char> {'T', 'P', 'S'};
         l.ForEach(x => stacks[4].Push(x));
 
-        l = new List<char> {'W', 'D', 'G', 'B', 'H', 'N', 'Z'};
+        l = new List<char> {'H', 'D', 'F', 'W', 'R', 'L'};
         l.ForEach(x => stacks[5].Push(x));
 
-        l = new List<char> {'F', 'M', 'S', 'P', 'V', 'G', 'C', 'N'};
+        l = new List<char> {'Z', 'N', 'D', 'C'};
         l.ForEach(x => stacks[6].Push(x));
 
-        l = new List<char> {'W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z'};
+        l = new List<char> {'W', 'N', 'R', 'F', 'V', 'S', 'J', 'Q'};
         l.ForEach(x => stacks[7].Push(x));
 
-        l = new List<char> {'R', 'P', 'M', 'L', 'H'};
+        l = new List<char> {'R', 'M', 'S', 'G', 'Z', 'W', 'V'};
         l.ForEach(x => stacks[8].Push(x));
 
         foreach (var s in from line in input where line.StartsWith("move") select line.Split(" "))
