@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sNd+8f+5dIxGNQuUAGK3aZtLccq6TGGkPz6zWy0keYVTMUA7lTdxpcXXzNOJu5uXyWyG70nMLVCQ4xmkyU5xpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Collection\\AoC_Collection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Joost Kolkman\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

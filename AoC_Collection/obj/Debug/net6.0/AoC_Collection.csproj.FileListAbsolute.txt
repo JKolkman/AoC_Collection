@@ -1,0 +1,17 @@
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.csproj.AssemblyReference.cache
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.AssemblyInfoInputs.cache
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.AssemblyInfo.cs
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.csproj.CoreCompileInputs.cache
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\bin\Debug\net6.0\AoC_Collection.exe
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\bin\Debug\net6.0\AoC_Collection.deps.json
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\bin\Debug\net6.0\AoC_Collection.runtimeconfig.json
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\bin\Debug\net6.0\AoC_Collection.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\bin\Debug\net6.0\AoC_Collection.pdb
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\ref\AoC_Collection.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.pdb
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.genruntimeconfig.cache
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\refint\AoC_Collection.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Collection\obj\Debug\net6.0\AoC_Collection.csproj.CopyComplete

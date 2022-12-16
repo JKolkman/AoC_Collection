@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=39dfc5df_002D3b77_002D4f1a_002Dabff_002D33325d193f98/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Day01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2016+Day01&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2016+Day02&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2022+Day06&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2016+Day03&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2022+Day07&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2022+Day08&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4::net6.0::AoC_Tests.TestsYear2022+Day09&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
