@@ -7,7 +7,7 @@ public class Year2022
 {
     public static void Main()
     {
-        D9P2(DataGatherer.GetDataFromFileAsList("C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Collection\\TestInput"));
+        D9P2(DataGatherer.GetDataFromFileAsList("C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Solutions\\AoC_Solutions\\TestInput"));
     }
     
     //Day 1

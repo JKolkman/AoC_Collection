@@ -359,17 +359,17 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "AoC_Collection/1.0.0": {
+      "AoC_Solutions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/AoC_Collection.dll": {}
+          "bin/placeholder/AoC_Solutions.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AoC_Collection.dll": {}
+          "bin/placeholder/AoC_Solutions.dll": {}
         }
       }
     }
@@ -1251,15 +1251,15 @@
         "version.txt"
       ]
     },
-    "AoC_Collection/1.0.0": {
+    "AoC_Solutions/1.0.0": {
       "type": "project",
-      "path": "../AoC_Collection/AoC_Collection.csproj",
-      "msbuildProject": "../AoC_Collection/AoC_Collection.csproj"
+      "path": "../AoC_Solutions/AoC_Solutions.csproj",
+      "msbuildProject": "../AoC_Solutions/AoC_Solutions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AoC_Collection >= 1.0.0",
+      "AoC_Solutions >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
@@ -1299,8 +1299,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Collection\\AoC_Collection.csproj": {
-              "projectPath": "C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Collection\\AoC_Collection.csproj"
+            "C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Solutions\\AoC_Solutions.csproj": {
+              "projectPath": "C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Solutions\\AoC_Solutions.csproj"
             }
           }
         }

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_Collection", "AoC_Collection\AoC_Collection.csproj", "{52F7FCD4-E129-4888-B423-0FAC02AE32B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_Solutions", "AoC_Solutions\AoC_Solutions.csproj", "{52F7FCD4-E129-4888-B423-0FAC02AE32B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC_Tests", "AoC_Tests\AoC_Tests.csproj", "{0F0A6DE1-2924-47AE-BA76-5C1AFE81C3D4}"
 EndProject

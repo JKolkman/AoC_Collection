@@ -1,8 +1,5 @@
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\testhost.dll
-C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Collection.deps.json
-C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Collection.runtimeconfig.json
-C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Collection.exe
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\testhost.exe
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\NUnit3.TestAdapter.dll
@@ -90,8 +87,6 @@ C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\z
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Collection.dll
-C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Collection.pdb
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\AoC_Tests.csproj.AssemblyReference.cache
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\AoC_Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\AoC_Tests.AssemblyInfoInputs.cache
@@ -103,3 +98,8 @@ C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\r
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\AoC_Tests.pdb
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\AoC_Tests.genruntimeconfig.cache
 C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\obj\Debug\net6.0\refint\AoC_Tests.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Solutions.deps.json
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Solutions.runtimeconfig.json
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Solutions.exe
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Solutions.dll
+C:\Users\Joost Kolkman\RiderProjects\AoC_Collection\AoC_Tests\bin\Debug\net6.0\AoC_Solutions.pdb

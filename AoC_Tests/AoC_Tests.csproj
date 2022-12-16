@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AoC_Collection\AoC_Collection.csproj" />
+      <ProjectReference Include="..\AoC_Solutions\AoC_Solutions.csproj" />
     </ItemGroup>
 
 </Project>

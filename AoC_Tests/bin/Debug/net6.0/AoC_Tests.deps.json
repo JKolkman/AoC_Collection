@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "AoC_Tests/1.0.0": {
         "dependencies": {
-          "AoC_Collection": "1.0.0",
+          "AoC_Solutions": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.11.0",
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "4.0.0",
@@ -315,12 +315,12 @@
       },
       "NUnit3TestAdapter/4.0.0": {},
       "System.Reflection.Metadata/1.6.0": {},
-      "AoC_Collection/1.0.0": {
+      "AoC_Solutions/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "AoC_Collection.dll": {}
+          "AoC_Solutions.dll": {}
         }
       }
     }
@@ -415,7 +415,7 @@
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
-    "AoC_Collection/1.0.0": {
+    "AoC_Solutions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
