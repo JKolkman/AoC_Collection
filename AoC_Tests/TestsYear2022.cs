@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using AoC_Collection;
+using AoC_Collection._2022;
 using NUnit.Framework;
 
 namespace AoC_Tests;
@@ -23,13 +24,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D1P1(input);
+            Day01_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D1P2(input);
+            Day01_2022.P2(input);
         }
     }
     public class Day02
@@ -44,13 +45,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D2P1(input);
+            Day02_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D2P2(input);
+            Day02_2022.P2(input);
         }
     }
     public class Day03
@@ -65,13 +66,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D3P1(input);
+            Day03_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D3P2(input);
+            Day03_2022.P2(input);
         }
     }
     public class Day04
@@ -86,13 +87,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D4P1(input);
+            Day04_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D4P2(input);
+            Day04_2022.P2(input);
         }
     }
     public class Day05
@@ -107,13 +108,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D5P1(input);
+            Day05_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D5P2(input);
+            Day05_2022.P2(input);
         }
     }
     public class Day06
@@ -128,13 +129,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D6P1(input);
+            Day06_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D6P2(input);
+            Day06_2022.P2(input);
         }
     }
     public class Day07
@@ -149,13 +150,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D7P1(input);
+            Day07_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D7P2(input);
+            Day07_2022.P2(input);
         }
     }
     public class Day08
@@ -170,13 +171,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D8P1(input);
+            Day08_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D8P2(input);
+            Day08_2022.P2(input);
         }
     }
     public class Day09
@@ -191,13 +192,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D9P1(input);
+            Day09_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D9P2(input);
+            Day09_2022.P2(input);
         }
     }
     public class Day10
@@ -212,13 +213,13 @@ public class TestsYear2022
         [Test]
         public void Part_1()
         {
-            Year2022.D10P1(input);
+            Day10_2022.P1(input);
         }
 
         [Test]
         public void Part_2()
         {
-            Year2022.D10P2(input);
+            Day10_2022.P2(input);
         }
     }
     public class Day11
