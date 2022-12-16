@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using System.Reflection;
 using System.Reflection.Metadata;
+using System.Xml.XPath;
 
 namespace AoC_Collection;
 
@@ -7,9 +9,10 @@ public class Year2022
 {
     public static void Main()
     {
-        D9P2(DataGatherer.GetDataFromFileAsList("C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Solutions\\AoC_Solutions\\TestInput"));
+        D10P2(DataGatherer.GetDataFromFileAsList(
+            "C:\\Users\\Joost Kolkman\\RiderProjects\\AoC_Collection\\AoC_Solutions\\TestInput"));
     }
-    
+
     //Day 1
     public static void D1P1(string input)
     {
@@ -24,7 +27,7 @@ public class Year2022
         l.Sort((x, y) => y.CompareTo(x));
         Console.WriteLine(l.GetRange(0, 3).Sum());
     }
-    
+
     //Day 2
     public static void D2P1(IEnumerable<string> input)
     {
@@ -68,7 +71,7 @@ public class Year2022
         var score = 0;
         foreach (var line in input)
         {
-            var a = line[..(line.Length/2)];
+            var a = line[..(line.Length / 2)];
             var b = line.Substring(line.Length / 2, line.Length / 2);
 
             foreach (var c in a.ToCharArray())
@@ -79,12 +82,13 @@ public class Year2022
                 break;
             }
         }
+
         Console.WriteLine(score);
     }
     public static void D3P2(List<string> input)
     {
         var score = 0;
-        for (var i = 0; i < input.Count; i+=3)
+        for (var i = 0; i < input.Count; i += 3)
         {
             foreach (var c in input[i].ToCharArray())
             {
@@ -94,9 +98,10 @@ public class Year2022
                 break;
             }
         }
+
         Console.WriteLine(score);
     }
-    
+
     //Day 4
     public static void D4P1(List<string> input)
     {
@@ -111,12 +116,15 @@ public class Year2022
                 count++;
                 continue;
             }
+
             if (val2[0] <= val1[0] && val2[1] >= val1[1]) count++;
         }
+
         Console.WriteLine(count);
     }
     public static void D4P2(List<string> input)
-    { var count = 0;
+    {
+        var count = 0;
         foreach (var line in input)
         {
             var split = line.Split(",");
@@ -128,48 +136,48 @@ public class Year2022
             else if (val2[0] <= val1[1] && val2[1] >= val1[1]) count++;
         }
 
-        Console.WriteLine(count); 
+        Console.WriteLine(count);
     }
-    
+
     //Day 5
     public static void D5P1(List<string> input)
     {
         var stacks = new List<Stack<char>>
         {
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
         };
         var l = new List<char> {'B', 'L', 'D', 'T', 'W', 'C', 'F', 'M'};
         l.ForEach(x => stacks[0].Push(x));
-        
+
         l = new List<char> {'M', 'B', 'L'};
         l.ForEach(x => stacks[1].Push(x));
-        
+
         l = new List<char> {'J', 'C', 'H', 'T', 'L', 'V'};
         l.ForEach(x => stacks[2].Push(x));
-        
+
         l = new List<char> {'S', 'P', 'J', 'W'};
         l.ForEach(x => stacks[3].Push(x));
-        
+
         l = new List<char> {'Z', 'S', 'C', 'F', 'T', 'L', 'R'};
         l.ForEach(x => stacks[4].Push(x));
-        
+
         l = new List<char> {'W', 'D', 'G', 'B', 'H', 'N', 'Z'};
         l.ForEach(x => stacks[5].Push(x));
-        
+
         l = new List<char> {'F', 'M', 'S', 'P', 'V', 'G', 'C', 'N'};
         l.ForEach(x => stacks[6].Push(x));
-        
+
         l = new List<char> {'W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z'};
         l.ForEach(x => stacks[7].Push(x));
-        
+
         l = new List<char> {'R', 'P', 'M', 'L', 'H'};
         l.ForEach(x => stacks[8].Push(x));
 
@@ -177,11 +185,11 @@ public class Year2022
         {
             for (var i = 0; i < int.Parse(s[1]); i++)
             {
-                if (stacks[int.Parse(s[3])-1].TryPop(out var result))
+                if (stacks[int.Parse(s[3]) - 1].TryPop(out var result))
                 {
-                    stacks[int.Parse(s[5])-1].Push(result);
+                    stacks[int.Parse(s[5]) - 1].Push(result);
                 }
-                
+
             }
         }
 
@@ -194,40 +202,40 @@ public class Year2022
     {
         var stacks = new List<Stack<char>>
         {
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
-            new (),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
+            new(),
         };
         var l = new List<char> {'B', 'L', 'D', 'T', 'W', 'C', 'F', 'M'};
         l.ForEach(x => stacks[0].Push(x));
-        
+
         l = new List<char> {'M', 'B', 'L'};
         l.ForEach(x => stacks[1].Push(x));
-        
+
         l = new List<char> {'J', 'C', 'H', 'T', 'L', 'V'};
         l.ForEach(x => stacks[2].Push(x));
-        
+
         l = new List<char> {'S', 'P', 'J', 'W'};
         l.ForEach(x => stacks[3].Push(x));
-        
+
         l = new List<char> {'Z', 'S', 'C', 'F', 'T', 'L', 'R'};
         l.ForEach(x => stacks[4].Push(x));
-        
+
         l = new List<char> {'W', 'D', 'G', 'B', 'H', 'N', 'Z'};
         l.ForEach(x => stacks[5].Push(x));
-        
+
         l = new List<char> {'F', 'M', 'S', 'P', 'V', 'G', 'C', 'N'};
         l.ForEach(x => stacks[6].Push(x));
-        
+
         l = new List<char> {'W', 'Q', 'R', 'J', 'F', 'V', 'C', 'Z'};
         l.ForEach(x => stacks[7].Push(x));
-        
+
         l = new List<char> {'R', 'P', 'M', 'L', 'H'};
         l.ForEach(x => stacks[8].Push(x));
 
@@ -236,16 +244,16 @@ public class Year2022
             var t = new Stack<char>();
             for (var i = 0; i < int.Parse(s[1]); i++)
             {
-                if (stacks[int.Parse(s[3])-1].TryPop(out var result))
+                if (stacks[int.Parse(s[3]) - 1].TryPop(out var result))
                 {
                     t.Push(result);
                 }
-                
+
             }
 
             while (t.Count > 0)
             {
-                stacks[int.Parse(s[5])-1].Push(t.Pop());
+                stacks[int.Parse(s[5]) - 1].Push(t.Pop());
             }
         }
 
@@ -254,7 +262,7 @@ public class Year2022
             Console.Write(s.Peek());
         }
     }
-    
+
     //Day 6
     public static void D6P1(string input)
     {
@@ -273,10 +281,10 @@ public class Year2022
                 queue.Enqueue(c);
 
                 if (queue.Distinct().Count() != 4) continue;
-                Console.WriteLine(i+1);
+                Console.WriteLine(i + 1);
                 break;
             }
-             
+
         }
     }
     public static void D6P2(string input)
@@ -296,10 +304,10 @@ public class Year2022
                 queue.Enqueue(c);
 
                 if (queue.Distinct().Count() != 14) continue;
-                Console.WriteLine(i+1);
+                Console.WriteLine(i + 1);
                 break;
             }
-             
+
         }
     }
     
@@ -332,7 +340,7 @@ public class Year2022
             "5626152 d.ext",
             "7214296 k"
         };*/
-        
+
         var dirStack = new Stack<Directory>();
         var allDirectories = new List<Directory>();
         dirStack.Push(new Directory("/"));
@@ -357,6 +365,7 @@ public class Year2022
                                 allDirectories.Add(dir);
                                 dirStack.Peek().Directories.Add(dir);
                             }
+
                             dirStack.Push(dir);
                             break;
                         }
@@ -415,7 +424,7 @@ public class Year2022
             "5626152 d.ext",
             "7214296 k"
         };*/
-        
+
         var dirStack = new Stack<Directory>();
         var allDirectories = new List<Directory>();
         dirStack.Push(new Directory("/"));
@@ -440,6 +449,7 @@ public class Year2022
                                 allDirectories.Add(dir);
                                 dirStack.Peek().Directories.Add(dir);
                             }
+
                             dirStack.Push(dir);
                             break;
                         }
@@ -479,11 +489,12 @@ public class Year2022
                 smallestDirSize = dir.GetSize();
             }
         }
-        
+
         Console.WriteLine(smallestDirSize);
-        
-        
+
+
     }
+
     private class Directory
     {
         public string Name;
@@ -502,7 +513,7 @@ public class Year2022
             return Files.Sum(file => file.Item2) + Directories.Sum(dir => dir.GetSize());
         }
     }
-    
+
     //Day 8
     public static void D8P1(List<string> input)
     {
@@ -515,74 +526,78 @@ public class Year2022
                 heightmap[x, y] = int.Parse(input[y].ToCharArray()[x].ToString());
             }
         }
-        
+
         // LR
         for (var y = 0; y < heightmap.GetLongLength(1); y++)
         {
             var high = heightmap[0, y];
-            if(!visibleTrees.Contains((0,y))) visibleTrees.Add((0,y));
+            if (!visibleTrees.Contains((0, y))) visibleTrees.Add((0, y));
             for (var x = 0; x < heightmap.GetLength(0); x++)
             {
                 if (heightmap[x, y] <= high) continue;
                 high = heightmap[x, y];
                 if (visibleTrees.Contains((x, y))) continue;
-                visibleTrees.Add((x,y));
+                visibleTrees.Add((x, y));
             }
         }
-        
+
         // RL
         for (var y = 0; y < heightmap.GetLongLength(1); y++)
         {
-            var high = heightmap[heightmap.GetLength(0)-1, y];
-            if(!visibleTrees.Contains((heightmap.GetLength(0)-1,y))) visibleTrees.Add((heightmap.GetLength(0)-1,y));
-            for (var x = heightmap.GetLength(0)-1; x >= 0; x--)
+            var high = heightmap[heightmap.GetLength(0) - 1, y];
+            if (!visibleTrees.Contains((heightmap.GetLength(0) - 1, y)))
+                visibleTrees.Add((heightmap.GetLength(0) - 1, y));
+            for (var x = heightmap.GetLength(0) - 1; x >= 0; x--)
             {
                 if (heightmap[x, y] <= high) continue;
                 high = heightmap[x, y];
                 if (visibleTrees.Contains((x, y))) continue;
-                visibleTrees.Add((x,y));
+                visibleTrees.Add((x, y));
             }
         }
-        
+
         //TB
         for (var x = 0; x < heightmap.GetLongLength(0); x++)
         {
             var high = heightmap[x, 0];
-            if(!visibleTrees.Contains((x,0))) visibleTrees.Add((x,0));
+            if (!visibleTrees.Contains((x, 0))) visibleTrees.Add((x, 0));
             for (var y = 0; y < heightmap.GetLength(1); y++)
             {
                 if (heightmap[x, y] <= high) continue;
                 high = heightmap[x, y];
                 if (visibleTrees.Contains((x, y))) continue;
-                visibleTrees.Add((x,y));
+                visibleTrees.Add((x, y));
             }
         }
-        
+
         //BT
         for (var x = 0; x < heightmap.GetLongLength(0); x++)
         {
-            var high = heightmap[x, heightmap.GetLength(1)-1];
-            if(!visibleTrees.Contains((x, heightmap.GetLength(1)-1))) visibleTrees.Add((x,heightmap.GetLength(1)-1));
-            for (var y = heightmap.GetLength(1)-1; y >= 0 ; y--)
+            var high = heightmap[x, heightmap.GetLength(1) - 1];
+            if (!visibleTrees.Contains((x, heightmap.GetLength(1) - 1)))
+                visibleTrees.Add((x, heightmap.GetLength(1) - 1));
+            for (var y = heightmap.GetLength(1) - 1; y >= 0; y--)
             {
                 if (heightmap[x, y] <= high) continue;
                 high = heightmap[x, y];
                 if (visibleTrees.Contains((x, y))) continue;
-                visibleTrees.Add((x,y));
+                visibleTrees.Add((x, y));
             }
         }
 
         Console.WriteLine(visibleTrees.Count);
-        
+
         for (var y = 0; y < heightmap.GetLongLength(1); y++)
         {
             for (var x = 0; x < heightmap.GetLength(0); x++)
             {
                 Console.Write(visibleTrees.Contains((x, y)) ? "X," : "O,");
             }
+
             Console.WriteLine();
         }
     }
+
     public static void D8P2(List<string> input)
     {
         var heightmap = new int[input[0].ToCharArray().Length, input.Count];
@@ -602,7 +617,7 @@ public class Year2022
                 var values = (0, 0, 0, 0);
                 var treeHeight = heightmap[x, y];
 
-                for (var x2 = x-1; x2 >= 0; x2--)
+                for (var x2 = x - 1; x2 >= 0; x2--)
                 {
                     values.Item1++;
                     if (heightmap[x2, y] >= treeHeight)
@@ -611,7 +626,7 @@ public class Year2022
                     }
                 }
 
-                for (var x2 = x+1; x2 < heightmap.GetLength(0); x2++)
+                for (var x2 = x + 1; x2 < heightmap.GetLength(0); x2++)
                 {
                     values.Item2++;
                     if (heightmap[x2, y] >= treeHeight)
@@ -620,7 +635,7 @@ public class Year2022
                     }
                 }
 
-                for (var y2 = y-1; y2 >= 0; y2--)
+                for (var y2 = y - 1; y2 >= 0; y2--)
                 {
                     values.Item3++;
                     if (heightmap[x, y2] >= treeHeight)
@@ -628,8 +643,8 @@ public class Year2022
                         break;
                     }
                 }
-                
-                for (var y2 = y+1; y2 < heightmap.GetLength(1); y2++)
+
+                for (var y2 = y + 1; y2 < heightmap.GetLength(1); y2++)
                 {
                     values.Item4++;
                     if (heightmap[x, y2] >= treeHeight)
@@ -642,10 +657,10 @@ public class Year2022
                 if (cur > scenicScore) scenicScore = cur;
             }
         }
-        
+
         Console.WriteLine(scenicScore);
     }
-    
+
     //Day 9
     public static void D9P1(List<string> input)
     {
@@ -653,7 +668,7 @@ public class Year2022
         var tCoords = (0, 0);
 
         var uniques = new List<(int, int)>();
-        uniques.Add((0,0));
+        uniques.Add((0, 0));
 
         foreach (var line in input.Select(x => x.Split(" ")))
         {
@@ -667,14 +682,16 @@ public class Year2022
                             if (hCoords.Item1 == tCoords.Item1 && hCoords.Item2 == tCoords.Item2 + 1)
                             {
                                 tCoords.Item2++;
-                            } else if (hCoords.Item1 == tCoords.Item1 + 1)
+                            }
+                            else if (hCoords.Item1 == tCoords.Item1 + 1)
                             {
                                 if (hCoords.Item2 > tCoords.Item2)
                                 {
                                     tCoords.Item1++;
                                     tCoords.Item2++;
                                 }
-                            }else if (hCoords.Item1 == tCoords.Item1 - 1)
+                            }
+                            else if (hCoords.Item1 == tCoords.Item1 - 1)
                             {
                                 if (hCoords.Item2 > tCoords.Item2)
                                 {
@@ -683,6 +700,7 @@ public class Year2022
                                 }
                             }
                         }
+
                         hCoords.Item2++;
                         break;
                     case "D":
@@ -691,14 +709,16 @@ public class Year2022
                             if (hCoords.Item1 == tCoords.Item1 && hCoords.Item2 == tCoords.Item2 - 1)
                             {
                                 tCoords.Item2--;
-                            } else if (hCoords.Item1 == tCoords.Item1 - 1)
+                            }
+                            else if (hCoords.Item1 == tCoords.Item1 - 1)
                             {
                                 if (hCoords.Item2 < tCoords.Item2)
                                 {
                                     tCoords.Item1--;
                                     tCoords.Item2--;
                                 }
-                            }else if (hCoords.Item1 == tCoords.Item1 + 1)
+                            }
+                            else if (hCoords.Item1 == tCoords.Item1 + 1)
                             {
                                 if (hCoords.Item2 < tCoords.Item2)
                                 {
@@ -707,6 +727,7 @@ public class Year2022
                                 }
                             }
                         }
+
                         hCoords.Item2--;
                         break;
                     case "R":
@@ -715,14 +736,16 @@ public class Year2022
                             if (hCoords.Item2 == tCoords.Item2 && hCoords.Item1 == tCoords.Item1 + 1)
                             {
                                 tCoords.Item1++;
-                            } else if (hCoords.Item2 == tCoords.Item2 + 1)
+                            }
+                            else if (hCoords.Item2 == tCoords.Item2 + 1)
                             {
                                 if (hCoords.Item1 > tCoords.Item1)
                                 {
                                     tCoords.Item2++;
                                     tCoords.Item1++;
                                 }
-                            } else if (hCoords.Item2 == tCoords.Item2 - 1)
+                            }
+                            else if (hCoords.Item2 == tCoords.Item2 - 1)
                             {
                                 if (hCoords.Item1 > tCoords.Item1)
                                 {
@@ -740,14 +763,16 @@ public class Year2022
                             if (hCoords.Item2 == tCoords.Item2 && hCoords.Item1 == tCoords.Item1 - 1)
                             {
                                 tCoords.Item1--;
-                            } else if (hCoords.Item2 == tCoords.Item2 + 1)
+                            }
+                            else if (hCoords.Item2 == tCoords.Item2 + 1)
                             {
                                 if (hCoords.Item1 < tCoords.Item1)
                                 {
                                     tCoords.Item2++;
                                     tCoords.Item1--;
                                 }
-                            } else if (hCoords.Item2 == tCoords.Item2 - 1)
+                            }
+                            else if (hCoords.Item2 == tCoords.Item2 - 1)
                             {
                                 if (hCoords.Item1 < tCoords.Item1)
                                 {
@@ -760,88 +785,167 @@ public class Year2022
                         hCoords.Item1--;
                         break;
                 }
-                
-                if(!uniques.Contains(tCoords)) uniques.Add(tCoords);
+
+                if (!uniques.Contains(tCoords)) uniques.Add(tCoords);
             }
         }
+
         Console.WriteLine(uniques.Count);
     }
 
     public static void D9P2(List<string> input)
     {
-        var head = (0, 0);
-        var tailSegments = new[]
+        var knotPositions = new (int x, int y)[10];
+        var ropeLocations = new HashSet<(int, int)>();
+
+        foreach (var line in input.Select(x => x.Trim().Split(' ')))
         {
-            (0, 0),
-            (0, 0),
-            (0, 0),
-            (0, 0),
-            (0, 0),
-            (0, 0),
-            (0, 0),
-            (0, 0),
-            (0, 0)
-        };
-        var endLocations = new List<(int, int)> {(0, 0)};
-        
-        
-        foreach(var line in input.Select(x => x.Split(" ")))
-        {
-            head = line[0] switch
+            var direction = line[0];
+            var steps = int.Parse(line[1]);
+
+            for (var i = 0; i < steps; i++)
             {
-                "U" => (head.Item1, head.Item2++),
-                "D" => (head.Item1, head.Item2--),
-                "R" => (head.Item1++, head.Item2),
-                "L" => (head.Item1--, head.Item2)
-            };
-            for (var j = 0; j < int.Parse(line[1]); j++)
-            {
-                var leadingSegment = head;
-                for (var i = 0; i < tailSegments.Length; i++)
+                switch (direction)
                 {
-                    var followingSegment = tailSegments[i];
-                    var distance = (leadingSegment.Item1 - followingSegment.Item1,
-                        leadingSegment.Item2 - followingSegment.Item2);
-                    tailSegments[i] = distance switch
-                    {
-                        (2, 2) => (followingSegment.Item1 + 1, followingSegment.Item2 + 1),
-                        (-2, -2) => (followingSegment.Item1 - 1, followingSegment.Item2 - 1),
-                        (-2, 2) => (followingSegment.Item1 - 1, followingSegment.Item2 + 1),
-                        (2, -2) => (followingSegment.Item1 + 1, followingSegment.Item2 - 1),
-                        (var x, -2) => (followingSegment.Item1 + x, followingSegment.Item2 - 1),
-                        (-2, var y) => (followingSegment.Item1 - 1, followingSegment.Item2 + y),
-                        (2, var y) => (followingSegment.Item1 + 1, followingSegment.Item2 + y),
-                        (var x, 2) => (followingSegment.Item1 + x, followingSegment.Item2 + 1),
-                        _ => followingSegment
-                    };
-                    leadingSegment = tailSegments[i];
+                    case "R":
+                        knotPositions[0].x += 1;
+                        break;
+                    case "L":
+                        knotPositions[0].x -= 1;
+                        break;
+                    case "U":
+                        knotPositions[0].y -= 1;
+                        break;
+                    case "D":
+                        knotPositions[0].y += 1;
+                        break;
+                    default:
+                        throw new Exception();
                 }
 
-                endLocations.Add(tailSegments[8]);
+                for (var j = 1; j < 10; j++)
+                {
+                    var dx = knotPositions[j - 1].x - knotPositions[j].x;
+                    var dy = knotPositions[j - 1].y - knotPositions[j].y;
+
+                    if (Math.Abs(dx) <= 1 && Math.Abs(dy) <= 1) continue;
+                    knotPositions[j].x += Math.Sign(dx);
+                    knotPositions[j].y += Math.Sign(dy);
+                }
+
+                ropeLocations.Add(knotPositions[10 - 1]);
             }
         }
 
-        Console.WriteLine(endLocations.Distinct().Count());
+        Console.WriteLine($"{ropeLocations.Count}");
     }
 
     //Day 10
     public static void D10P1(List<string> input)
     {
+        var cycle = 0;
+        var x = 1;
+        var cycleToCheck = 20;
+        var cycleResults = new List<int>();
+        foreach (var line in input.Select(x => x.Split(' ')))
+        {
+            if (cycle == cycleToCheck)
+            {
+                cycleResults.Add(cycleToCheck * x);
+                if (cycleToCheck == 220)
+                {
+                    break;
+                }
+
+                cycleToCheck += 40;
+            }
+
+            if (line[0] == "noop")
+            {
+                cycle++;
+                continue;
+            }
+            else
+            {
+                if (cycleToCheck - cycle <= 2)
+                {
+                    cycleResults.Add(cycleToCheck * x);
+                    if (cycleToCheck == 220)
+                    {
+                        break;
+                    }
+
+                    cycleToCheck += 40;
+                }
+
+                cycle += 2;
+                x += int.Parse(line[1]);
+            }
+        }
+
+        Console.WriteLine(cycleResults.Sum());
     }
+
     public static void D10P2(List<string> input)
     {
-            
+        var x = 1;
+        var cycle = 0;
+        var crt = new List<string> {""};
+        var lines = input.Select(s => s.Split(' '));
+        DrawPixel();
+        foreach (var line in lines)
+        {
+            if (line.Length == 1)
+            {
+                cycle++;
+                DrawPixel();
+                continue;
+            }
+            else
+            {
+                cycle++;
+                DrawPixel();
+                cycle++;
+                DrawPixel();
+                x += int.Parse(line[1]);
+            }
+        }
+
+        foreach (var l in crt)
+        {
+            Console.WriteLine(l);
+        }
+
+
+        void DrawPixel()
+        {
+            if (cycle % 40 == 0)
+            {
+                crt.Add("");
+            }
+
+            var index = crt[^1].Length - 1;
+            if (index == x || index == x + 1 || index == x - 1)
+            {
+                crt[^1] += "#";
+            }
+            else
+            {
+                crt[^1] += ".";
+            }
+        }
+
     }
-    
+
     //Day 11
-    public static void D11P1(List<string> input)
+    public static void D11P1(string input)
     {
     }
     public static void D11P2(List<string> input)
     {
             
     }
-    
+
     //Day 12
     public static void D12P1(List<string> input)
     {

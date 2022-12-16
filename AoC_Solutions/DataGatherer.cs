@@ -50,5 +50,12 @@ namespace AoC_Collection
             var logList = new List<string>(logFile);
             return logList;
         }
+        
+        public static string GetDataFromFileAsString(string filepath)
+        {
+            var logFile = File.ReadAllText(filepath);
+            var logList = new string(logFile);
+            return logList;
+        }
     }
 }

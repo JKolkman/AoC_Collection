@@ -197,6 +197,7 @@ public class TestsYear2022
         [Test]
         public void Part_2()
         {
+            Year2022.D9P2(input);
         }
     }
     public class Day10
@@ -205,17 +206,19 @@ public class TestsYear2022
         [Test]
         public void GetInput()
         {
-            input = DataGatherer.GetDataAsList(0000, 01);
+            input = DataGatherer.GetDataAsList(2022, 10);
         }
         
         [Test]
         public void Part_1()
         {
+            Year2022.D10P1(input);
         }
 
         [Test]
         public void Part_2()
         {
+            Year2022.D10P2(input);
         }
     }
     public class Day11

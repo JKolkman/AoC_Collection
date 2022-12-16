@@ -12,6 +12,3 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-#Settings File
-../../AoC_Solutions/settings.json
-
